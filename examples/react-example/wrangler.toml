@@ -1,0 +1,21 @@
+name = "ssr-react-example"
+type = "javascript"
+
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+
+[site]
+# These two settings are necessary to save the assets to CF KV storage
+# https://developers.cloudflare.com/workers/cli-wrangler/commands#kvkey
+# https://developers.cloudflare.com/workers/cli-wrangler/configuration#site
+bucket = ".universal"
+entry-point = "."
+
+[build]
+command = "pnpm build:cf-worker"
+watch_dir = "src"
+
+[build.upload]
+format="service-worker"
