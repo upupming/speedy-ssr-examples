@@ -1,0 +1,20 @@
+{
+  "name": "base-url",
+  "scripts": {
+    "dev": "universal dev",
+    "start": "universal start",
+    "build": "universal build"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router-dom": "6.11.2"
+  },
+  "devDependencies": {
+    "@speedy-js/universal": "0.10.4",
+    "@types/react": "17.0.33",
+    "@types/react-dom": "17.0.10",
+    "less": "4.1.2",
+    "source-map-support": "0.5.21"
+  }
+}
